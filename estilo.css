@@ -764,9 +764,9 @@
         }
         @media(max-width:600px){
              h2{
-                font-size: 32px !important;
+                font-size: 28px !important;
             }
             .jc{
-                font-size: 32px !important;
+                font-size: 28px !important;
             }
         }
