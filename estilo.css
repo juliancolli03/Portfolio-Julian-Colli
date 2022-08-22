@@ -101,7 +101,7 @@
             font-size: 25px;
             color: #ff5080;
             white-space: nowrap;
-            border-right: 4px solid;
+            border-right: 2px solid;
             width: 9ch;
             animation: typing 2s steps(9), blink .5s infinite step-end alternate;
             overflow:hidden;
@@ -762,11 +762,11 @@
                 margin-bottom: 15px;
             }
         }
-        @media(max-width:600px){
+        /* @media(max-width:600px){
              h2{
                 font-size: 25px !important;
             }
             .jc{
                 font-size: 25px !important;
             }
-        }
+        } */
