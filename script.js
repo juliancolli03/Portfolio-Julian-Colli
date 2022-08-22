@@ -40,3 +40,11 @@ function efectoHabilidades() {
     }
 
 }
+
+// efecto circulo
+// rompe responsive
+// const circulo = document.querySelector("#circulo")
+// document.addEventListener("mousemove", e =>{
+// const mouseX = e.pageX - 30
+// const mouseY = e.pageY - 30
+// circulo.style = `transform: translate3d(${mouseX}px, ${mouseY}px,0)`})
