@@ -263,16 +263,16 @@
         
         #servicios .fila {
             /* display: flex; */
-            display: inline-flex;
+            display: flex;
             justify-content: space-between;
             max-width: 1150px;
-            margin: 30px auto;
+            margin: 0 5px;
         }
         
         #servicios .fila .servicio {
             max-width: 350px;
             background-color: #fff;
-            padding: 30px;
+            padding: 60px;
             margin: 60px;
             /* margin: 0 5px; */
             border-radius: 5px;
@@ -307,9 +307,11 @@
         
         #servicios .fila .servicio ul {
             list-style: none;
-            display: flex;
+            display: grid;
             justify-content: space-around;
             margin-bottom: 10px;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin-left: -5px
         }
         
         #servicios .fila .servicio p {

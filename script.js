@@ -12,8 +12,8 @@ function seleccionar(link) {
     opciones[4].className = "";
     link.className = "seleccionado";
 }
-function fasedesarrollo(){
-    alert ("Proyecto en desarrollo")
+ function fasedesarrollo(){
+     alert ("Proyecto en desarrollo")
 }
 // //funciÃ³n que muestra el menu responsive
 // function responsiveMenu() {
