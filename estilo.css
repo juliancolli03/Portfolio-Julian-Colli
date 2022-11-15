@@ -525,6 +525,7 @@
         
         #contacto .contenedor-form .input-full {
             width: 100%;
+            resize:none
         }
         
         #contacto .titulo-seccion {
