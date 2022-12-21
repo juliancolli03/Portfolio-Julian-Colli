@@ -246,7 +246,7 @@
         /* *********************/
         
         #servicios {
-            padding: 100px 40px;
+            padding: 100px;
             text-align: center;
             background-color: #f3f3f3;
         }
@@ -263,20 +263,24 @@
         
         #servicios .fila {
             /* display: flex; */
-            display: flex;
-            justify-content: space-between;
-            max-width: 1150px;
-            margin: 0 5px;
-        }
+            display: grid;
+  justify-content: space-between;
+  max-width: 1150px;
+  margin: 0 5px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+        
         
         #servicios .fila .servicio {
             max-width: 350px;
             background-color: #fff;
             padding: 60px;
-            /* margin: 60px; */
-         margin: 0 5px; 
+            margin: 60px;
+            margin: 0 5px;
+              margin-top: 0px;
             border-radius: 5px;
             transition: .5s;
+            margin-top: 20px;
         }
         
         #servicios .fila .servicio:hover {
