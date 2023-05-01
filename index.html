@@ -43,9 +43,9 @@
                               <li class="li">
                               <a class="nav-link active" aria-current="page" href="#">INICIO</a>
                               </li>
-                              <li class="li">
+                              <!-- <li class="li">
                                 <a class="nav-link active" aria-current="page" href="#sobremi">SOBRE MI</a>
-                              </li>
+                              </li> -->
                            
                               <li class="li">
                                 <a class="nav-link active" aria-current="page" href="#servicios">PROYECTOS</a>
@@ -66,25 +66,28 @@
                     </div> -->
                 </div>
             </header>
-            <main>
-              <div data-aos="fade-up"
+              <!-- <div data-aos="fade-up"
               data-aos-duration="1000"  class="presentacion">  
-                <p class="bienvenida">Bienvenidos</p>
-                <h2>  Soy <span class="jc">Julian Colli</span><br>  Desarrollador Full Stack</h2>
+                <h2>  Soy <span class="jc">Julian Colli</span>, Full Stack Developer</h2>
+                <h2>Desarrollador Full Stack</h2>
                 <p class="descripcion"> </p>
-                <a class="botones" href="#habilidades">Ir a habilidades</a> 
+                < <a class="botones" href="#habilidades">Ir a habilidades</a>  -->
          </div>
+        </main>
         </div>
+    
+
     </section>
-    </main>
     <!-- SECCION S O B R E M I -->
+    <div class="antessobremi">
     <section id="sobremi">
         <div class="contenedor-foto">
             <img src="foto.jfif" alt="">
         </div>
-        <div  data-aos="fade-up"
-        data-aos-duration="1000" class="sobremi">
-            <p class="titulo-seccion">Sobre Mi</p>
+        <div class="sobremi">
+            <!-- data-aos="fade-up"
+        data-aos-duration="1000" -->
+            <!-- <p class="titulo-seccion">Sobre Mi</p> -->
             <h2>Hola, Soy <span>Julian Colli</span> </h2>
             <h3>Desarrollador Full Stack</h3>
             <p>Mi nombre es Julian, soy un Desarrollador Full Stack que trabaja con el stack MERN.</p>
@@ -93,7 +96,7 @@
 
         </div>
     </section>
-
+</div>
     <!-- SECCION S E R V I C I O S -->
     <section id="servicios">
      
@@ -201,7 +204,7 @@ en la 264 sacar margin: 60 px y ponerle margin: 0 5px; -->
         </div>
         <div class="skill">
             <div class="info">
-                <p> <span class="lista"> </span>Mongo DB & Sql</p>
+                <p> <span class="lista"> </span>Mongo DB & MySql</p>
                 <span class="porcentaje">85%</span>
             </div>
 
@@ -218,18 +221,20 @@ en la 264 sacar margin: 60 px y ponerle margin: 0 5px; -->
         <div class="contenedor-form">
             <form action="https://formspree.io/f/moqrrdbg"
             method="POST">
-                <div class="fila mitad">
-                    <input type="text" name="Nombre y apellido" placeholder="Nombre Completo *" class="input-mitad">
-                    <input type="email" name="Mail" placeholder="Dirección de Email" class="input-mitad">
+                <div class="fila">
+                    <input type="text" name="Nombre y apellido" placeholder="Nombre Completo " class="input-full" required/>
+                    <!-- <input type="email" name="Mail" placeholder="Dirección de Email" class="input-mitad"> -->
                 </div>
                 <div class="fila">
-                    <input type="text" name="xq contacta" placeholder="Tema..." class="input-full">
+                            <input type="email" name="Mail" placeholder="Dirección de Email" class="input-full" required/> 
                 </div>
+                <!-- <div class="fila">
+                    <input type="text" name="xq contacta" placeholder="Tema..." class="input-full" required/>
+                </div> -->
                 <div class="fila">
-                    <textarea name="mensaje" id="" cols="30" rows="10"  placeholder="Tu Mensaje..." class="input-full"></textarea>
+                    <textarea name="mensaje" id="" cols="30" rows="10"  placeholder="Tu Mensaje..." class="input-full" required></textarea>
                 </div>
-
-                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar btn-primary">
             </form>
         </div>
     </section>
