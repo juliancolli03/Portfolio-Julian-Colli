@@ -84,13 +84,16 @@
         <div class="contenedor-foto">
             <img src="foto.jfif" alt="">
         </div>
-        <div class="sobremi">
+        <div  data-aos="fade-up"
+            data-aos-duration="1000" class="sobremi">
             <!-- data-aos="fade-up"
         data-aos-duration="1000" -->
             <!-- <p class="titulo-seccion">Sobre Mi</p> -->
             <h2>Hola, Soy <span>Julian Colli</span> </h2>
             <h3>Desarrollador Full Stack</h3>
-            <p>Mi nombre es Julian, soy un Desarrollador Full Stack que trabaja con el stack MERN.</p>
+            <p>Mi nombre es Julian, soy un Desarrollador Full Stack que trabaja con el stack MERN. <br>
+            Tambien soy tutor del curso de programacion backend en Coderhouse. <br>
+        </p>
             <!-- <p>Actualmente trabajo con el stack MERN.</p> -->
             <a href="Currículum MERN.pdf">Descargar CV</a>
 
@@ -100,7 +103,7 @@
     <!-- SECCION S E R V I C I O S -->
     <section id="servicios">
      
-        <h3 class="titulo-seccion">MIS PROYECTOS</h3>
+        <h3 class="titulo-seccion">PROYECTOS REALIZADOS</h3>
        
         <div data-aos="fade-up"
         data-aos-duration="1000" class="fila">
@@ -150,7 +153,6 @@
 <!-- de la 257 sacar inline flex y poner flex 
 en la 264 sacar margin: 60 px y ponerle margin: 0 5px; -->
 
-
         <!-- enmediocard -->
         <div class="servicio">
         <h4>Hotel Dubai</h4>
@@ -167,10 +169,49 @@ en la 264 sacar margin: 60 px y ponerle margin: 0 5px; -->
     </div>
 </div>
     </section>
+    <h2 style="display: flex;justify-content:center;">MIS HABILIDADES</h2>
+    <div class="container">
+        <div class="screen">
+            <div class="desktop">
+                <div class="skills">
+                    <div class="skill">
+                        <i title="HTML" style="color: orange;" class="fa-brands fa-html5 html"></i>
+                    </div>
+                    <div class="skill">
+                        <i title="CSS" style="color: #0EACFF;" class="fa-brands fa-css3 css"></i>
+                    </div>
+                    <div class="skill">
+                        <i title="BOOSTRAP" style="color: #352a84;" class="fa-brands fa-bootstrap bostrap"></i>
+                    </div>
+                    <div class="skill">
+                        <i title="GITHUB" style="color: black;" class="fa-brands fa-github github"></i>
+                    </div>
+                    <div class="skill">
+                        <i title="JAVASCRIPT" style="color: yellow;" class="fa-brands fa-js js"></i>
+                    </div>
+                    <div class="skill">
+                        <i title="REACT" style="color: cyan; width: 69px;" class="fa-brands fa-react react"></i>
+                    </div>
+                    <div class="skill">
+                        <i title="NODE JS" style="color: springgreen; width: 69px;" class="fa-brands fa-node node"></i>
+                    </div>
+                    <div class="skill">
+                    <img title="MONGODB" src="https://www.opc-router.de/wp-content/uploads/2021/03/mongodb_thumbnail.png" alt="" srcset="" height="57px" width="62px">                     
+                </div>
+                <div class="skill">
+                    <img title="EXPRESS JS" src="https://cdn.iconscout.com/icon/free/png-256/free-node-js-1174925.png" alt="" srcset="" height="60px" width="67px">
+                </div>
+                <div class="skill">
+                    <img title="MYSQL" src="https://cdn.icon-icons.com/icons2/2699/PNG/512/mysql_logo_icon_169941.png" alt="" srcset="" height="60px" width="80">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
     <!-- SECCION H A B I L I D A D E S -->
     <div id="habilidades"></div>
-    <div class="contenedor-skills" id="skills">
+    <!-- <div class="contenedor-skills" id="skills">
         <h3 id="">HABILIDADES </h3>
         <div class="skill">
             <div class="info">
@@ -212,10 +253,36 @@ en la 264 sacar margin: 60 px y ponerle margin: 0 5px; -->
                 <div class="" id="ps"></div>
             </div>
         </div> 
-    </div>
+    </div> -->
 
 
     <!-- SECCTION C O N T A C T O -->
+    <div class="divContacto">
+        <div class="ladoContacto">
+        <div class="datossContacto">
+           <br>
+           <br>
+           <div class="datosContacto">
+            <h5 class="dataContac">DATOS DE CONTACTO</h5>
+            <div class="datosmio" style="margin-left: 146px;">
+            <p style="white-space: nowrap;">Ramos Mejia, Buenos Aires, Argentina</p>
+            <br>
+            <strong>Mail:</strong>
+           <p style="white-space: nowrap;color: #565656;margin-left: -266px;">jc7236352@gmail.com</p>
+           <strong>Github:</strong>
+           <p style="white-space: nowrap;color: #565656;margin-left: -246px;">https://github.com/juliancolli03</p>
+        </div>
+       </div>
+           <div class="redes-container">
+                <ul>
+                  <li> <a href="https://www.instagram.com/juliann_colli03/?hl=es" class="insta" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                  <li> <a href="https://www.linkedin.com/in/julian-colli-05395a231/" class="linkedin" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                  <li> <a href="https://wa.me/5491169253825" class="wsp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+                </ul>
+            </div>
+
+        </div>    
+        </div>
     <section id="contacto">
         <h3 class="titulo-seccion">Contactame</h3>
         <div class="contenedor-form">
@@ -223,7 +290,6 @@ en la 264 sacar margin: 60 px y ponerle margin: 0 5px; -->
             method="POST">
                 <div class="fila">
                     <input type="text" name="Nombre y apellido" placeholder="Nombre Completo " class="input-full" required/>
-                    <!-- <input type="email" name="Mail" placeholder="Dirección de Email" class="input-mitad"> -->
                 </div>
                 <div class="fila">
                             <input type="email" name="Mail" placeholder="Dirección de Email" class="input-full" required/> 
@@ -232,23 +298,17 @@ en la 264 sacar margin: 60 px y ponerle margin: 0 5px; -->
                     <input type="text" name="xq contacta" placeholder="Tema..." class="input-full" required/>
                 </div> -->
                 <div class="fila">
-                    <textarea name="mensaje" id="" cols="30" rows="10"  placeholder="Tu Mensaje..." class="input-full" required></textarea>
+                    <textarea name="mensaje" id="" cols="30" rows="5"  placeholder="Tu Mensaje..." class="input-full" required></textarea>
                 </div>
                 <input type="submit" value="Enviar Mensaje" class="btn-enviar btn-primary">
             </form>
         </div>
     </section>
+</div>
 
     <!-- SECCION FOOTER -->
     <footer>
         <p>Todos los derechos reservados - Julian Colli 2023</p>
-        <div class="redes-container">
-            <ul>
-              <li> <a href="https://www.instagram.com/juliann_colli03/?hl=es" class="insta" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-              <li> <a href="https://www.linkedin.com/in/julian-colli-05395a231/" class="linkedin" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-              <li> <a href="https://wa.me/5491169253825" class="wsp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
-            </ul>
-        </div>
     </footer>
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
