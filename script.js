@@ -40,11 +40,29 @@ function seleccionar(link) {
 //     }
 
 // }
-const time= document.getElementById("time")
-const jora = () =>{
-   return new Date.toString()
-}
-console.log(jora)
+function updateClock() {
+    const timeElement = document.getElementById("time");
+    const dateElement = document.getElementById("date");
+    const now = new Date();
+    const hours = now.getHours().toString().padStart(2, "0");
+    const minutes = now.getMinutes().toString().padStart(2, "0");
+    const seconds = now.getSeconds().toString().padStart(2, "0");
+    const currentTime = `${hours}:${minutes}`;
+    
+    const daysOfWeek = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
+    const dayOfWeek = daysOfWeek[now.getDay()];
+    const currentDate = `${dayOfWeek}`;
+  
+    timeElement.textContent = currentTime;
+    dateElement.textContent = currentDate;
+  }
+  
+  // Actualizar la hora cada segundo
+//  setInterval(updateClock, 1000);
+  
+  // Actualizar la hora al cargar la página
+ // updateClock();
+  
 // efecto circulo
 // rompe responsive
 // const circulo = document.querySelector("#circulo")

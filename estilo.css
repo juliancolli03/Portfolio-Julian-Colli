@@ -547,9 +547,41 @@ position: relative;
         /* *********************/
         /* seccion C O N T A C T O */
         /* *********************/
-        
+        /* Estilos generales para la base de la PC */
+/* Estilos para la base de la PC */
+/* Estilos para la base de la PC */
+.base {
+    width: 100%;
+    height: 80px; /* Altura de la base de la PC */
+    background-color: #333; /* Color de fondo de la base de la PC */
+    border-top: 1px solid #000; /* Borde superior de la base */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  /* Estilos para los iconos */
+  
+  
+  /* Estilos para la hora actual y el día */
+  .clock {
+    text-align: right;
+    color: #fff;
+  }
+  
+  #time {
+    font-size: 24px;
+  }
+  
+  #date {
+    font-size: 16px;
+  }
+  
+  
+  
         #contacto {
-            padding: 100px 15px;
+            padding: 46px 15px;
             background-color: #f3f3f3;
         }
         
@@ -631,7 +663,7 @@ position: relative;
 .redes-container{
     display: flex;
     margin: 10px;
-    height: 10vh;
+    
     align-items: center;
     justify-content: center;
   }
@@ -654,68 +686,7 @@ position: relative;
     border-radius: 40px;
     animation: move linear 2500ms infinite;
   }
-  /* @keyframes move {
-    0% {
-      box-shadow:
-        4px -4px 0 hsla(0, 100%, 50%, 1),
-        3px -3px 0 hsla(0, 100%, 50%, 1),
-        2px -2px 0 hsla(0, 100%, 50%, 1),
-        1px -1px 0 hsla(0, 100%, 50%, 1),
-        -4px 4px 0 hsla(180, 100%, 50%, 1),
-        -3px 3px 0 hsla(180, 100%, 50%, 1),
-        -2px 2px 0 hsla(180, 100%, 50%, 1),
-        -1px 1px 0 hsla(180, 100%, 50%, 1)
-      ;
-    }
-    25% {
-      box-shadow:
-        -4px -4px 0 hsla(180, 100%, 50%, 1),
-        -3px -3px 0 hsla(180, 100%, 50%, 1),
-        -2px -2px 0 hsla(180, 100%, 50%, 1),
-        -1px -1px 0 hsla(180, 100%, 50%, 1),
-        4px 4px 0 hsla(0, 100%, 50%, 1),
-        3px 3px 0 hsla(0, 100%, 50%, 1),
-        2px 2px 0 hsla(0, 100%, 50%, 1),
-        1px 1px 0 hsla(0, 100%, 50%, 1)
-      ;
-    }
-    50% {
-      box-shadow:
-        -4px 4px 0 hsla(0, 100%, 50%, 1),
-        -3px 3px 0 hsla(0, 100%, 50%, 1),
-        -2px 2px 0 hsla(0, 100%, 50%, 1),
-        -1px 1px 0 hsla(0, 100%, 50%, 1),
-        4px -4px 0 hsla(180, 100%, 50%, 1),
-        3px -3px 0 hsla(180, 100%, 50%, 1),
-        2px -2px 0 hsla(180, 100%, 50%, 1),
-        1px -1px 0 hsla(180, 100%, 50%, 1)
-      ;
-    }
-    75% {
-     box-shadow:
-        4px 4px 0 hsla(180, 100%, 50%, 1),
-        3px 3px 0 hsla(180, 100%, 50%, 1),
-        2px 2px 0 hsla(180, 100%, 50%, 1),
-        1px 1px 0 hsla(180, 100%, 50%, 1),
-        -4px -4px 0 hsla(0, 100%, 50%, 1),
-        -3px -3px 0 hsla(0, 100%, 50%, 1),
-        -2px -2px 0 hsla(0, 100%, 50%, 1),
-        -1px -1px 0 hsla(0, 100%, 50%, 1)
-      ;
-    }
-    100% {
-      box-shadow:
-        4px -4px 0 hsla(0, 100%, 50%, 1),
-        3px -3px 0 hsla(0, 100%, 50%, 1),
-        2px -2px 0 hsla(0, 100%, 50%, 1),
-        1px -1px 0 hsla(0, 100%, 50%, 1),
-        -4px 4px 0 hsla(180, 100%, 50%, 1),
-        -3px 3px 0 hsla(180, 100%, 50%, 1),
-        -2px 2px 0 hsla(180, 100%, 50%, 1),
-        -1px 1px 0 hsla(180, 100%, 50%, 1)
-      ;
-    } */
-/* } */
+  
   .redes-container ul:hover a{
     filter: blur(1px);
   }
@@ -735,7 +706,31 @@ position: relative;
         /* *********************/
         /* seccion R E S P O N S I V E */
         /* *********************/
-        
+        /* Estilos para pantallas más pequeñas, como dispositivos móviles */
+@media (max-width: 768px) {
+    /* Centrar el formulario horizontalmente */
+    .contenedor-form {
+      margin: 0 auto;
+    }
+
+    .titulo-seccion {
+        text-align: center;
+        padding-left: 40px;
+      padding-right: 10px;
+      }
+    
+    /* Agregar un margen a los costados */
+    .contenedor-form {
+      padding-left: 40px;
+      padding-right: 10px;
+    }
+  
+    /* Estilos adicionales si lo deseas, como cambiar el ancho del formulario */
+    /* .contenedor-form {
+      width: 90%;
+    } */
+  }
+  
         @media screen and (max-width: 800px) {
             .redes {
                 display: none;
