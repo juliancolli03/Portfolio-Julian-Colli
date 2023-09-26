@@ -560,7 +560,14 @@ position: relative;
     align-items: center;
     padding: 0 20px;
   }
-  
+  /* Estilo CSS para los enlaces con la clase "small-link" */
+.small-link {
+    font-size: 14px; /* Puedes ajustar el tamaño de la fuente según tus preferencias */
+    white-space: nowrap;
+    color: #565656;
+    text-decoration: none; /* Opcional: quita la decoración de subrayado */
+}
+
   /* Estilos para los iconos */
   
   
@@ -649,14 +656,14 @@ position: relative;
             background-color: #000;
             color: #fff;
             text-align: center;
-            padding: 20px;
+            padding: 13px;
         }
         
         footer a {
             text-decoration: none;
             color: #fff;
             display: inline-block;
-            margin: 5px;
+            
             font-size: 26px;
         }
         /* redes  */
