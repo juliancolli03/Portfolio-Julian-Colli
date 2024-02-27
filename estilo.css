@@ -550,6 +550,58 @@ position: relative;
         /* Estilos generales para la base de la PC */
 /* Estilos para la base de la PC */
 /* Estilos para la base de la PC */
+.reloj {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: #1e90ff; /* Color de la barra de navegación estilo Windows XP */
+    color: #fff;
+    text-align: right;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btniniciarwindows {
+    margin-right: 40px; /* Empujar el botón de inicio hacia el extremo izquierdo */
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #4CAF50; /* Color de fondo verde del botón de inicio de Windows XP */
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.iconos-medio {
+    display: flex;
+    align-items: center;
+    margin-right: auto; /* Empujar hacia el extremo izquierdo */
+}
+
+.iconos-medio img {
+    margin-right: 22px; /* Espacio entre los iconos */
+}
+
+.btniniciarwindows img {
+    width: 20px; /* Tamaño del logo de Windows */
+    height: auto;
+    margin-right: 5px; /* Espacio entre el logo y el texto */
+}
+
+.btniniciarwindows span {
+    font-size: 14px; /* Tamaño del texto */
+}
+.hora {
+    margin-left: auto; /* Empujar el reloj hacia el extremo derecho */
+}
+
 .base {
     width: 100%;
     height: 80px; /* Altura de la base de la PC */

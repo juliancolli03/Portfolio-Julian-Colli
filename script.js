@@ -70,3 +70,17 @@ function updateClock() {
 // const mouseX = e.pageX - 30
 // const mouseY = e.pageY - 30
 // circulo.style = `transform: translate3d(${mouseX}px, ${mouseY}px,0)`})
+
+function actualizarHora() {
+  var fecha = new Date();
+  var hora = fecha.getHours();
+  var minutos = fecha.getMinutes();
+  var horaStr = hora + ":" + (minutos < 10 ? "0" + minutos : minutos);
+  document.getElementById("hora").innerHTML = horaStr;
+}
+
+// Llamar a la función una vez para mostrar la hora actual al cargar la página
+actualizarHora();
+
+// Actualizar la hora cada minuto (en lugar de cada segundo)
+setInterval(actualizarHora, 60000); // 60000 milisegundos = 1 minuto
