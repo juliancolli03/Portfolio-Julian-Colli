@@ -327,7 +327,7 @@
         }
         
         .proyecto-card {
-            background-color: #fff;
+            background-color: #cdd7e1; /* Azul vibrante */
             border-radius: 15px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             overflow: hidden;
@@ -347,7 +347,7 @@
         .proyecto-content h4 {
             font-size: 24px;
             margin-bottom: 10px;
-            color: #007acc;
+            color: black;
         }
         
         .proyecto-content p {
@@ -359,16 +359,19 @@
         .proyecto-btn {
             display: inline-block;
             padding: 10px 20px;
-            background-color: #007acc;
-            color: #fff;
+            border: 1px solid #000;
+                        color: #fff;
             border-radius: 50px;
             text-decoration: none;
             transition: background-color 0.3s ease;
+            color: #000;
         }
         
         .proyecto-btn:hover {
-            background-color: #005f99;
-        }
+            background-color: #ff5080;       
+            color: white;
+            transition: .5s;
+         }
         
         /* Responsivo: Una columna en pantallas pequeñas */
         @media (max-width: 768px) {
