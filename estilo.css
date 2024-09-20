@@ -210,36 +210,51 @@
             width: 60px;
             height: 60px;
             border-radius: 50%;
+
             transition: all 0s ;
-        }#sobremi {
-            max-width: 1100px;
-            margin: auto;
-            padding: 100px 15px;
-            color: #111135;
-            flex-wrap: wrap;
+        }.antessobremi {
+            display: flex;
             justify-content: center;
             align-items: center;
-                background-color: #f5f7fa;
+            height: 100vh; /* Altura completa de la ventana */
+            background-color: #f5f7fa;
+            padding: 20px; /* Añadir padding para que no esté tan cerca de los bordes */
+        }
+        
+        #sobremi {
+            display: flex;
+            flex-direction: column;
+            max-width: 1200px; /* Aumentar el ancho del contenedor */
+            margin: auto;
+            padding: 49px 15px; /* Aumentar el padding para darle más espacio */
+            color: #111135;
+            align-items: center;
+            background-color: #f5f7fa;
         }
         
         #sobremi .contenedor-foto {
-            max-width: 400px;
-            margin-right: 40px;
+            max-width: 150px; /* Tamaño original del contenedor de la imagen */
+            margin-bottom: 20px;
         }
         
         #sobremi .contenedor-foto img {
-            width: 100%;
-            border-radius: 50px;
+            width: 110%; /* La imagen será más grande que el contenedor */
+            border-radius: 130px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: box-shadow 0.4s ease, filter 0.4s ease; /* Transición para sombra y brillo */
+
         }
-        
+        #sobremi .contenedor-foto img:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada al hacer hover */
+            filter: brightness(1.1); /* Un poco de brillo extra al hacer hover */
+        }
         #sobremi .sobremi {
-            flex: 1;
-            max-width: 600px;
+            text-align: center;
+            max-width: 800px; /* Ampliar el espacio del texto */
         }
         
         #sobremi .sobremi h2 {
-            font-size: 50px;
+            font-size: 48px; /* Aumentar el tamaño del título */
             font-weight: bold;
             margin: 20px 0;
             letter-spacing: 2px;
@@ -250,7 +265,7 @@
         }
         
         #sobremi .sobremi h3 {
-            font-size: 23px;
+            font-size: 28px; /* Aumentar el tamaño del subtítulo */
             font-weight: 500;
             text-transform: uppercase;
             margin-bottom: 20px;
@@ -258,9 +273,9 @@
         }
         
         #sobremi .sobremi p {
-            font-size: 18px;
+            font-size: 18px; /* Aumentar el tamaño del texto */
             color: #565656;
-            margin-bottom: 12px;
+            margin-bottom: 20px;
         }
         
         #sobremi .sobremi a {
@@ -269,7 +284,7 @@
             color: #000;
             border-radius: 30px;
             border: 1px solid #000;
-            padding: 10px 20px;
+            padding: 12px 24px; /* Ampliar el tamaño del botón */
             margin-top: 30px;
             transition: 0.5s;
         }
@@ -282,14 +297,22 @@
         /* Responsivo: Cambiar la disposición en pantallas pequeñas */
         @media (max-width: 768px) {
             #sobremi {
-                flex-direction: column;
-                text-align: center;
+                padding: 30px 15px;
             }
             
-            #sobremi .contenedor-foto {
-                margin: 0 0 20px 0;
+            #sobremi .sobremi h2 {
+                font-size: 36px;
+            }
+            
+            #sobremi .sobremi h3 {
+                font-size: 22px;
+            }
+            
+            #sobremi .sobremi p {
+                font-size: 16px;
             }
         }
+        
         
         /* *********************/
         /* seccion S E R V I C I O S */
@@ -457,9 +480,7 @@ position: relative;
             padding: 100px 0;
             text-align: center;
         }
-        .antessobremi{
-            background-color: #e9e9f7;
-        }
+        
         
         .contenedor-skills .skill {
             max-width: 600px;
@@ -900,9 +921,7 @@ position: relative;
                 max-width: 200px;
                 margin: auto;
             }
-            #sobremi .contenedor-foto img {
-                padding: 8px;
-            }
+           
             #sobremi .sobremi .titulo-seccion {
                 text-align: center;
             }
