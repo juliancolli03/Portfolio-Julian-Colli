@@ -770,9 +770,9 @@ position: relative;
         
         #contacto .titulo-seccion {
             text-align: center;
-            font-size: 22px;
             text-transform: uppercase;
             color: #111135;
+        
         }
         
         #contacto .btn-enviar {
