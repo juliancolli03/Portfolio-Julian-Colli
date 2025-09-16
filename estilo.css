@@ -1,994 +1,224 @@
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Montserrat';
-        }
-    
-        /* *********************/
-        /* seccion I N I C I O */
-        /* *************
-        *******/
-        
-        #inicio {
-            height: 60px;
-        }
-        .divContacto{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-        }
-        .skills {
-            height: 100%;
-            display: grid;
-            flex-wrap: wrap;
-            flex-direction: column;
-            float: left;
-            padding-top: 15px;
-            padding-left: 15px;
-            grid-template-columns: 1fr 1fr 1fr;
-          }
-          .skill {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 15px;
-            font-size: 50px;
-          }
+/* =========
+   Variables
+   ========= */
+:root {
+  --bg: #ffffff;
+  --bg-soft: #f5f7fa;
+  --text: #111418;
+  --muted: #6b7280;
+  --accent: #371ee1;
+  --border: #e6e8eb;
 
-        #inicio .contenido header {
-            /* background-color: rgba(0, 0, 0, .8); */
-            position: fixed;
-            width: 100%;
-            z-index: 100;
-            top: 0;
-        }
-        header{
-            background-color: black;
-        }
-        #inicio .contenido header .contenido-header {
-            max-width: 1100px;
-            margin: auto;
-            display: grid;
-            justify-content: end;
-            align-items: center;
-            padding: 10px 20px;
-        }
-        
-        #inicio .contenido header .contenido-header h1 {
-            text-align: center;
-            color: #ff5080;
-        }
-        
-        #inicio .contenido header .contenido-header nav ul {
-            list-style: none;
-            display: flex;
-            align-items: center;
-        }
-        
-        #inicio .contenido header .contenido-header nav ul li a {
-            text-decoration: none;
-            color: #fff;
-            margin: 0 12px;
-            font-weight: 400;
-            transition: .5s;
-        }
-        
-        #inicio .contenido header .contenido-header nav ul li a:hover {
-            color: #ff5080;
-        }
-        
-        #inicio .contenido header .contenido-header .redes a {
-            text-decoration: none;
-            color: #fff;
-            display: inline-block;
-            margin-left: 10px;
-            transition: .5s;
-        }
-        
-        #inicio .contenido header .contenido-header .redes a:hover {
-            color: #ff5080;
-        }
-        
-        #inicio .contenido header .contenido-header .seleccionado {
-            color: #ff5080;
-        }
-        
-        #inicio .contenido .presentacion {
-            max-width: 1100px;
-            height: 100vh;
-            margin: auto;
-            color: #fff;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        #inicio .contenido .presentacion .bienvenida {
-            font-size: 16px;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-            letter-spacing: 5px;
-        }
-       
-        #inicio .contenido .presentacion h2 {
-            font-size: 35px;
-            margin-bottom: 25px;
-            text-align: center;
-        }
-        
-        #inicio .contenido .presentacion h2 span {
-            display:inline-flex;
-            font-size: 25px;
-            color: #ff5080;
-            /* white-space: nowrap;
-            border-right: 2px solid;
-            width: 9ch;
-            animation: typing 2s steps(9), blink .5s infinite step-end alternate;
-            overflow:hidden; */
-}
-/* @keyframes typing {
+  --radius: 14px;
+  --radius-sm: 10px;
 
-    from { width: 0}
-    }
-@keyFrames blink {
-        50% { border-color: transparent}
-       } */
-
-        .jc{
-            font-size: 40px !important; 
-        }
-        #inicio .contenido .presentacion .descripcion {
-            max-width: 700px;
-            margin: 25px auto;
-            font-size: 18px;
-            text-align: center;
-        }
-        
-        #inicio .contenido .presentacion a {
-            text-decoration: none;
-            display: inline-block;
-            margin: 25px;
-            padding: 20px 25px;
-            border: 2px solid #fff;
-            border-radius: 50px;
-            color: #fff;
-            font-weight: bold;
-            text-transform: uppercase;
-            transition: .5s;
-        }
-        .botones{
-            text-decoration: none;
-            display: inline-block;
-            margin: 25px;
-            padding: 20px 25px;
-            border: 2px solid rgb(0, 37, 248);
-            border-radius: 40px;
-            color: white;
-            font-weight: bold;
-            text-transform: uppercase;
-            transition: .5s;
-
-        }
-        .botones:hover{
-            color: black;
-            background-color: #f3f3f3;
-        }
-        #inicio .contenido .presentacion a:hover {
-            background-color: #ff5080;
-        }
-        .ladoContacto{
-            background-color: #f3f3f3;
-        }
-        .datosContacto{
-            display: grid;
-            grid-template-columns: 1fr;
-        }
-        .dataContac{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 25px;
-        }
-        .datosmio{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            margin: 17px;
-        }
-        #icono-nav {
-            color: #fff;
-            display: none;
-        }
-        /* *********************/
-        /* seccion S O B R E  M I */
-        /* *********************/
-        #circulo{
-            position: absolute;
-            border: 2px solid red;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-
-            transition: all 0s ;
-        }.antessobremi {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh; /* Altura completa de la ventana */
-            background-color: #f5f7fa;
-            padding: 20px; /* Añadir padding para que no esté tan cerca de los bordes */
-        }
-        
-        #sobremi {
-            display: flex;
-            flex-direction: column;
-            max-width: 1200px; /* Aumentar el ancho del contenedor */
-            margin: auto;
-            padding: 49px 15px; /* Aumentar el padding para darle más espacio */
-            color: #111135;
-            align-items: center;
-            background-color: #f5f7fa;
-        }
-        
-        #sobremi .contenedor-foto {
-            max-width: 150px; /* Tamaño original del contenedor de la imagen */
-            margin-bottom: 20px;
-        }
-        
-        #sobremi .contenedor-foto img {
-            width: 110%; /* La imagen será más grande que el contenedor */
-            border-radius: 130px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: box-shadow 0.4s ease, filter 0.4s ease; /* Transición para sombra y brillo */
-
-        }
-        #sobremi .contenedor-foto img:hover {
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada al hacer hover */
-            filter: brightness(1.1); /* Un poco de brillo extra al hacer hover */
-        }
-        #sobremi .sobremi {
-            text-align: center;
-            max-width: 800px; /* Ampliar el espacio del texto */
-        }
-        
-        #sobremi .sobremi h2 {
-            font-size: 48px; /* Aumentar el tamaño del título */
-            font-weight: bold;
-            margin: 20px 0;
-            letter-spacing: 2px;
-        }
-        
-        #sobremi .sobremi h2 span {
-            color: #371ee1;
-        }
-        
-        #sobremi .sobremi h3 {
-            font-size: 28px; /* Aumentar el tamaño del subtítulo */
-            font-weight: 500;
-            text-transform: uppercase;
-            margin-bottom: 20px;
-            letter-spacing: 1px;
-        }
-        
-        #sobremi .sobremi p {
-            font-size: 18px; /* Aumentar el tamaño del texto */
-            color: #565656;
-            margin-bottom: 20px;
-        }
-        
-        #sobremi .sobremi a {
-            display: inline-block;
-            text-decoration: none;
-            color: #000;
-            border-radius: 30px;
-            border: 1px solid #000;
-            padding: 12px 24px; /* Ampliar el tamaño del botón */
-            margin-top: 30px;
-            transition: 0.5s;
-        }
-        
-        #sobremi .sobremi a:hover {
-            background-color: #ff5080;
-            color: #fff;
-        }
-        
-        /* Responsivo: Cambiar la disposición en pantallas pequeñas */
-        @media (max-width: 768px) {
-            #sobremi {
-                padding: 30px 15px;
-            }
-            
-            #sobremi .sobremi h2 {
-                font-size: 36px;
-            }
-            
-            #sobremi .sobremi h3 {
-                font-size: 22px;
-            }
-            
-            #sobremi .sobremi p {
-                font-size: 16px;
-            }
-        }
-        
-        
-        /* *********************/
-        /* seccion S E R V I C I O S */
-        /* *********************/
-        
-        #servicios {
-            padding: 100px;
-            text-align: center;
-            background-color: #f3f3f3;
-        }
-        
-        #servicios .titulo-seccion {
-            text-align: center;
-            font-size: 28x;
-            text-transform: uppercase;
-            color: #111135;
-        }
-        #proyectos {
-            background-color: #f5f7fa;
-        }
-        
-        .titulo-seccion {
-            text-align: center;
-            font-size: 32px;
-            color: #333;
-            margin-bottom: 40px;
-        }
-        
-        .proyectos-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr); /* Dos columnas */
-            gap: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        
-        .proyecto-card {
-            background-color: #cdd7e1; /* Azul vibrante */
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        .proyecto-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        }
-        
-        .proyecto-content {
-            padding: 20px;
-            text-align: center;
-        }
-        
-        .proyecto-content h4 {
-            font-size: 24px;
-            margin-bottom: 10px;
-            color: black;
-        }
-        
-        .proyecto-content p {
-            font-size: 16px;
-            margin-bottom: 15px;
-            color: #666;
-        }
-        
-        .proyecto-btn {
-            display: inline-block;
-            padding: 10px 20px;
-            border: 1px solid #000;
-                        color: #fff;
-            border-radius: 50px;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-            color: #000;
-        }
-        
-        .proyecto-btn:hover {
-            background-color: #ff5080;       
-            color: white;
-            transition: .5s;
-         }
-        
-        /* Responsivo: Una columna en pantallas pequeñas */
-        @media (max-width: 768px) {
-            .proyectos-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-        
-        
-        #servicios .fila .servicio {
-            max-width: 350px;
-            background-color: #313131;
-            padding: 60px;
-            margin: 60px;
-            margin: 0 5px;
-              margin-top: 0px;
-            border-radius: 17px;
-            transition: .5s;
-            margin-top: 20px;
-            color: white;
-        }
-        
-        /* #servicios .fila .servicio:hover {
-            box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
-        } */
-        
-        #servicios .fila .servicio .icono {
-            display: inline-block;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            background-color: #d3d3d3;
-            padding: 20px;
-            margin-bottom: 25px;
-        }
-        
-        #servicios .fila .servicio h4 {
-            font-size: 22px;
-            margin-bottom: 25px;
-        }
-        .screen{
-            background: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/55d344c0-cd51-41d2-a72c-385644b8d8fc/danqv4o-1c947f41-5538-4601-a909-22b1fc35bb14.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzU1ZDM0NGMwLWNkNTEtNDFkMi1hNzJjLTM4NTY0NGI4ZDhmY1wvZGFucXY0by0xYzk0N2Y0MS01NTM4LTQ2MDEtYTkwOS0yMmIxZmMzNWJiMTQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.VGnQ9apXTEMCuMgWrpUV2xZLg8waSV9C0da3TJShP3c");
-  background-size: auto;
-background-size: cover;
-width: calc(100% - 20px);
-height: 500px;
-box-sizing: content-box;
-border: #aaa solid 10px;
-border-radius: 25px;
-position: relative;
-        }
-        #servicios .fila .servicio hr {
-            width: 30%;
-            margin: auto;
-            color: rgb(120, 139, 243);
-            margin-bottom: 25px;
-        }
-        
-        #servicios .fila .servicio ul {
-            list-style: none;
-            display: grid;
-            justify-content: space-around;
-            margin-bottom: 10px;
-            grid-template-columns: 1fr 1fr 1fr;
-            margin-left: -5px
-        }
-        
-        #servicios .fila .servicio p {
-            font-size: 14px;
-            line-height: 22px;
-        }
-        /* *********************/
-        /* seccion S K I L L S */
-        /* *********************/
-        
-        .contenedor-skills {
-            background: url("https://ejemplos-curriculum.com/wp-content/uploads/2021/06/close-up-image-of-programer-working-at-his-desk-in-office-1024x683.jpg");
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            background-size: cover;
-            color: #fff;
-            background-position: center center;
-            padding: 100px 0;
-            text-align: center;
-        }
-        
-        
-        .contenedor-skills .skill {
-            max-width: 600px;
-            margin: 30px auto;
-        }
-        
-        .contenedor-skills .skill .info {
-            display: flex;
-            justify-content: space-between;
-        }
-        
-        .contenedor-skills .skill .lista {
-            display: inline-block;
-            margin-right: 20px;
-            height: 10px;
-            width: 10px;
-            background-color: #fff;
-            border-radius: 20px;
-        }
-        
-        .contenedor-skills .skill .barra {
-            background-color: #919191;
-            width: 100%;
-            height: 6px;
-            margin: 10px 0px;
-        }
-        
-        .contenedor-skills .skill .barra .barra-progreso1 {
-            background-color: #fff;
-            width: 95%;
-            height: 6px;
-            animation: progreso1 2s forwards;
-        }
-        
-        .contenedor-skills .skill .barra .barra-progreso2 {
-            background-color: #fff;
-            width: 90%;
-            height: 6px;
-            animation: progreso2 2s forwards;
-        }
-        
-        .contenedor-skills .skill .barra .barra-progreso3 {
-            background-color: #fff;
-            width: 90%;
-            height: 6px;
-            animation: progreso3 2s forwards;
-        }
-        
-        .contenedor-skills .skill .barra .barra-progreso4 {
-            background-color: #fff;
-            width: 85%;
-            height: 6px;
-            animation: progreso4 2s forwards;
-        }
-        
-        @keyframes progreso1 {
-            0% {
-                width: 0;
-            }
-            100% {
-                width: 95%;
-            }
-        }
-        
-        @keyframes progreso2 {
-            0% {
-                width: 0;
-            }
-            100% {
-                width: 90%;
-            }
-        }
-        
-        @keyframes progreso3 {
-            0% {
-                width: 0;
-            }
-            100% {
-                width: 90%;
-            }
-        }
-        
-        @keyframes progreso4 {
-            0% {
-                width: 0;
-            }
-            100% {
-                width: 85%;
-            }
-        }
-        /* *********************/
-        /* seccion P O R T F O L I O */
-        /* *********************/
-        
-        #portfolio {
-            max-width: 1100px;
-            padding: 100px 0;
-            margin: auto;
-        }
-        
-        #portfolio .titulo-seccion {
-            text-align: center;
-            font-size: 22px;
-            text-transform: uppercase;
-            color: #111135;
-            text-decoration: underline;
-            text-decoration-color: #d3d3d3;
-            text-decoration-thickness: 5px;
-        }
-        
-        #portfolio .fila {
-            display: flex;
-            justify-content: space-between;
-            margin: 30px 0;
-        }
-        
-        #portfolio .fila .proyecto {
-            max-width: 450px;
-            border: 1px solid #000;
-            margin: 0 10px;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        #portfolio .fila .proyecto img {
-            width: 100%;
-            height: 100%;
-            ;
-            filter: grayscale(1);
-            object-fit: cover;
-            transition: .5s;
-        }
-        
-        #portfolio .fila .proyecto:hover img {
-            filter: grayscale(0);
-        }
-        
-        #portfolio .fila .proyecto .info {
-            position: absolute;
-            left: 0px;
-            background-color: rgba(0, 0, 0, 0.8);
-            color: #ff5080;
-            width: 100%;
-            padding: 10px;
-            opacity: 0;
-            bottom: -40px;
-            transition: .5s;
-        }
-        
-        #portfolio .fila .proyecto:hover .info {
-            opacity: 1;
-            bottom: 0;
-        }
-        /* *********************/
-        /* seccion C O N T A C T O */
-        /* *********************/
-        /* Estilos generales para la base de la PC */
-/* Estilos para la base de la PC */
-/* Estilos para la base de la PC */
-.reloj {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 5px;
-    box-sizing: border-box;
-    background-color: #1e90ff; /* Color de la barra de navegación estilo Windows XP */
-    color: #fff;
-    text-align: right;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  --shadow-1: 0 2px 10px rgba(17, 20, 24, 0.06);
+  --shadow-2: 0 8px 24px rgba(17, 20, 24, 0.10);
 }
 
-.btniniciarwindows {
-    margin-right: 40px; /* Empujar el botón de inicio hacia el extremo izquierdo */
-    display: flex;
-    align-items: center;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 20px;
-    background-color: #4CAF50; /* Color de fondo verde del botón de inicio de Windows XP */
-    color: #fff;
-    font-weight: bold;
+/* =========
+   Reset base
+   ========= */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  color: var(--text);
+  background: var(--bg);
+  font-family: 'Montserrat', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  line-height: 1.5;
 }
 
-.iconos-medio {
-    display: flex;
-    align-items: center;
-    margin-right: auto; /* Empujar hacia el extremo izquierdo */
+/* Utilidades */
+.fw-600 { font-weight: 600; }
+.fw-800 { font-weight: 800; }
+.small { font-size: .9rem; }
+.link-muted { color: var(--muted); text-decoration: none; }
+.link-muted:hover { color: var(--text); text-decoration: underline; }
+.btn-pill { border-radius: 999px; }
+
+/* =========
+   Header/Nav
+   ========= */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255,255,255,0.82);
+  backdrop-filter: saturate(140%) blur(8px);
 }
 
-.iconos-medio img {
-    margin-right: 22px; /* Espacio entre los iconos */
+.navbar-brand { letter-spacing: .5px; }
+
+/* Espaciado para que el contenido no quede bajo el header */
+.pt-header { padding-top: 72px; }
+
+/* Estado activo simple */
+.nav-link.active { font-weight: 600; }
+
+/* =========
+   Secciones
+   ========= */
+.section { padding: 64px 0; }
+.section-hero { padding: 96px 0 64px; }
+.bg-soft { background: var(--bg-soft); }
+
+.section-title {
+  font-weight: 800;
+  letter-spacing: .2px;
+  margin-bottom: 12px;
 }
 
-.btniniciarwindows img {
-    width: 20px; /* Tamaño del logo de Windows */
-    height: auto;
-    margin-right: 5px; /* Espacio entre el logo y el texto */
+.subtitle {
+  text-transform: uppercase;
+  color: var(--muted);
+  letter-spacing: .12em;
+  margin-top: -4px;
+  margin-bottom: 12px;
+  font-size: .95rem;
 }
 
-.btniniciarwindows span {
-    font-size: 14px; /* Tamaño del texto */
+/* =========
+   Hero
+   ========= */
+.hero-title {
+  font-weight: 800;
+  font-size: clamp(1.8rem, 1.2rem + 2.5vw, 2.6rem);
+  margin-bottom: 12px;
 }
-.hora {
-    margin-left: auto; /* Empujar el reloj hacia el extremo derecho */
-}
+.accent { color: var(--accent); }
 
-.base {
-    width: 100%;
-    height: 80px; /* Altura de la base de la PC */
-    background-color: #333; /* Color de fondo de la base de la PC */
-    border-top: 1px solid #000; /* Borde superior de la base */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-  }
-  /* Estilo CSS para los enlaces con la clase "small-link" */
-.small-link {
-    font-size: 14px; /* Puedes ajustar el tamaño de la fuente según tus preferencias */
-    white-space: nowrap;
-    color: #565656;
-    text-decoration: none; /* Opcional: quita la decoración de subrayado */
+.hero-photo {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid #fff;
 }
 
-  /* Estilos para los iconos */
-  
-  
-  /* Estilos para la hora actual y el día */
-  .clock {
-    text-align: right;
-    color: #fff;
-  }
-  
-  #time {
-    font-size: 24px;
-  }
-  
-  #date {
-    font-size: 16px;
-  }
-  
-  
-  
-        #contacto {
-            padding: 46px 15px;
-            background-color: #f3f3f3;
-        }
-        
-        #contacto .titulo-seccion {
-            margin-bottom: 20px;
-        }
-        
-        #contacto .contenedor-form {
-            max-width: 1100px;
-            margin: auto;
-        }
-        
-        #contacto .contenedor-form .fila {
-            margin-bottom: 15px;
-        }
-        
-        #contacto .contenedor-form .mitad {
-            display: flex;
-            justify-content: space-between;
-        }
-        
-        #contacto .contenedor-form input,
-        #contacto .contenedor-form textarea {
-            padding: 20px;
-            border-radius: 60px;
-            border: none;
-            /* border: 1px solid #919191; */
-        }
-        
-        #contacto .contenedor-form .mitad input {
-            width: 48%;
-        }
-        
-        #contacto .contenedor-form .input-full {
-            width: 100%;
-            resize:none
-        }
-        
-        #contacto .titulo-seccion {
-            text-align: center;
-            text-transform: uppercase;
-            color: #111135;
-        
-        }
-        
-        #contacto .btn-enviar {
-            display: block;
-            margin: auto;
-            cursor: pointer;
-            transition: .5s;
-            padding: 10px 15px !important;
-            border: 1px solid black; 
+/* =========
+   Proyectos
+   ========= */
+.project-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-1);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.project-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-2);
+}
+.project-title {
+  margin: 4px 0 6px;
+  font-weight: 700;
+}
+.project-text { margin-bottom: 10px; }
+.project-link {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--text);
+  border-bottom: 1px solid transparent;
+}
+.project-link:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
 
-        }
-        
-        #contacto .btn-enviar:hover {
-            background-color: #ff5080;
-            color: #fff;
-        }
-        /* *********************/
-        /* seccion F O O T E R */
-        /* *********************/
-        
-        footer {
-            background-color: #000;
-            color: #fff;
-            text-align: center;
-            padding: 13px;
-        }
-        
-        footer a {
-            text-decoration: none;
-            color: #fff;
-            display: inline-block;
-            
-            font-size: 26px;
-        }
-        /* redes  */
-.redes-container{
-    display: flex;
-    margin: 10px;
-    
-    align-items: center;
-    justify-content: center;
-  }
-  .redes-container ul li{
-    display: inline-block;
-    margin: 0 5px;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-  }
-  .redes-container ul li a{
-    display: block;
-    width: 50px;
+/* Badges */
+.badges .badge {
+  border-radius: 999px;
+  font-weight: 600;
+  padding: .5rem .75rem;
+}
 
-    background: #333;
-    color: white;
-    line-height: 50px;
-    transition: .2s;
-    font-size: 20px;
-    border-radius: 40px;
-    animation: move linear 2500ms infinite;
-  }
-  
-  .redes-container ul:hover a{
-    filter: blur(1px);
-  }
-  .redes-container ul li a:hover{
-    transform: translateY(-3px) scale(1.06);
-    filter: none;
-  }
-  .redes-container ul li .insta:hover{
-    color: #e4405f;
-  }
-  .redes-container ul li .wsp:hover{
-    color: rgb(87, 230, 87);
-  }
-  .redes-container ul li .linkedin:hover{
-    color: #0077B5;
-  } 
-        /* *********************/
-        /* seccion R E S P O N S I V E */
-        /* *********************/
-        /* Estilos para pantallas más pequeñas, como dispositivos móviles */
-@media (max-width: 768px) {
-    /* Centrar el formulario horizontalmente */
-    .contenedor-form {
-      margin: 0 auto;
-    }
+/* =========
+   Habilidades
+   ========= */
+.skill-icon {
+  display: grid;
+  place-items: center;
+  height: 84px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: #fff;
+  box-shadow: var(--shadow-1);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.skill-icon i {
+  font-size: 34px;
+}
+.skill-icon img {
+  max-width: 42px;
+  max-height: 42px;
+  display: block;
+  filter: grayscale(0.1);
+}
+.skill-icon:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-2);
+}
 
-    .titulo-seccion {
-        text-align: center;
-        padding-left: 40px;
-      padding-right: 10px;
-      }
-    
-    /* Agregar un margen a los costados */
-    .contenedor-form {
-      padding-left: 40px;
-      padding-right: 10px;
-    }
-  
-    /* Estilos adicionales si lo deseas, como cambiar el ancho del formulario */
-    /* .contenedor-form {
-      width: 90%;
-    } */
-  }
-  
-        @media screen and (max-width: 800px) {
-            .redes {
-                display: none;
-            }
-           
-            nav {
-                display: none;
-            }
-            nav.responsive {
-                display: block;
-                background-color: rgba(0, 0, 0, .8);
-                width: 100%;
-                position: absolute;
-                top: 48px;
-                left: 0;
-                padding: 10px 0;
-            }
-            nav.responsive ul {
-                display: block !important;
-                text-align: center;
-            }
-            nav.responsive ul li {
-                margin: 5px 0;
-            }
-            #icono-nav {
-                display: block;
-            }
-            #inicio .contenido .presentacion h2 {
-                font-size: 40px;
-            }
-            #inicio .contenido header .contenido-header{
-                display: initial;
-            }
-            /* seccion SOBRE MI */
-            #sobremi {
-                padding: 50px 0;
-                display: block;
-            }
-            #sobremi .contenedor-foto {
-                max-width: 200px;
-                margin: auto;
-            }
-           
-            #sobremi .sobremi .titulo-seccion {
-                text-align: center;
-            }
-            #sobremi .sobremi h2 {
-                font-size: 25px;
-                text-align: center;
-            }
-            /* seccion MIS SERVICIOS */
-            #servicios {
-                padding: 50px 15px;
-            }
-            #servicios .fila {
-                display: block;
-            }
-            #servicios .fila .servicio {
-                margin: 10px auto;
-            }
-            /* seccion HABLIDADES MI */
-            .contenedor-skills {
-                padding: 50px 20px;
-            }
-            /* seccion PORTFOLIO */
-            #portfolio {
-                padding: 50px 0;
-            }
-            #portfolio .fila {
-                display: block;
-            }
-            #portfolio .fila .proyecto {
-                margin: 10px auto;
-            }
-            /* seccion CONTACTO */
-            #contacto {
-                padding: 50px 15px;
-            } 
-            #contacto .contenedor-form .mitad {
-                margin-bottom: 15px;
-                display: block;
-            }
-            #contacto .contenedor-form .mitad input {
-                width: 100%;
-                margin-bottom: 15px;
-            }
-            #contacto .contenedor-form .input-full{
-                width: 85%;
-            resize: none;
-            }
-            .divContacto{
-                display: grid;
-                grid-template-columns: 1fr;
-            }
-            #contacto .btn-enviar{
-                margin-left: 20px;
-            }
-            #contacto .titulo-seccion{
-                text-align: left;
-                margin-left: 20px;
-        }
-        .datosmio {
-            margin-left: 10px !important;
-        }
-        }
-        @media(max-width:600px){
-             h2{
-                font-size: 25px !important;
-            }
-            .jc{
-                font-size: 25px !important;
-            }
-        }
+/* =========
+   Contacto
+   ========= */
+form.card {
+  border-radius: var(--radius);
+}
+form .form-control {
+  border-radius: 12px;
+}
+
+/* =========
+   Footer
+   ========= */
+.site-footer {
+  padding: 18px 0;
+  border-top: 1px solid var(--border);
+  background: #fff;
+}
+
+/* =========
+   Accesibilidad y motion
+   ========= */
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}
+/* ===== Brand colors en Skills ===== */
+.skill-icon i.fa-html5      { color: #E34F26; }   /* HTML5 */
+.skill-icon i.fa-css3-alt   { color: #1572B6; }   /* CSS3 */
+.skill-icon i.fa-bootstrap  { color: #7952B3; }   /* Bootstrap */
+.skill-icon i.fa-github     { color: #181717; }   /* GitHub */
+.skill-icon i.fa-js         { color: #F7DF1E; }   /* JavaScript */
+.skill-icon i.fa-react      { color: #61DAFB; }   /* React */
+.skill-icon i.fa-node-js    { color: #339933; }   /* Node.js */
+
+/* Tamaño consistente para los íconos Font Awesome */
+.skill-icon i { 
+  font-size: 40px;          /* antes 34px */
+  line-height: 1;
+}
+
+/* Respetar colores de imágenes (Mongo, Express, MySQL) */
+.skill-icon img { 
+  filter: none;             /* quitar leve gris */
+}
+
+/* Agrandar únicamente MySQL */
+#habilidades [aria-label="MySQL"] img {
+  max-width: 60px;          /* + tamaño */
+  max-height: 60px;
+}
+
+/* (Opcional) un poquito más de sombra al hacer hover para resaltar color */
+.skill-icon:hover {
+  box-shadow: 0 10px 26px rgba(17, 20, 24, 0.12);
+  transform: translateY(-3px);
+}
+/* Vue & Angular brand colors */
+.skill-icon i.fa-vuejs   { color: #41B883; }  /* Vue */
+.skill-icon i.fa-angular { color: #DD0031; }  /* Angular */
