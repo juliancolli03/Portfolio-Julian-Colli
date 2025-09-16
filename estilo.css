@@ -222,3 +222,25 @@ form .form-control {
 /* Vue & Angular brand colors */
 .skill-icon i.fa-vuejs   { color: #41B883; }  /* Vue */
 .skill-icon i.fa-angular { color: #DD0031; }  /* Angular */
+/* ===== Compactación fuerte navbar + hero en mobile ===== */
+
+/* El header es sticky: no reservamos espacio extra arriba */
+.pt-header { padding-top: 0 !important; }
+
+/* Desktop/tablet: nada raro */
+.site-header .navbar { margin-bottom: 0 !important; }
+
+
+@media (min-width: 575.98px) {
+  .section-hero {
+padding: 50px 0 64px;   }
+
+  /* Reducimos el gutter vertical del row del héroe */
+  .section {
+    padding: 6px 0 64px;
+}
+  /* Título y textos sin márgenes extra */
+}
+
+/* Navegación por ancla: compensar header sticky sin padding global */
+
